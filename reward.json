@@ -1,0 +1,26 @@
+{
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "end_game": {
+        "op": "equal",
+        "reference": 1
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "player_1_score": {
+        "reward": 1.0
+      },
+      "player_2_score": {
+        "penalty": 1.0
+      }
+    }
+  }
+}

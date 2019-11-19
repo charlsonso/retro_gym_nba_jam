@@ -1,0 +1,32 @@
+{
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "end_game": {
+        "op": "equal",
+        "reference": 1
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "player_1_score": {
+        "reward": 1.0
+      },
+      "player_2_score": {
+        "penalty": 1.0
+      }
+    }
+  }
+  ,
+  "actions": [
+    [[], ["UP"], ["DOWN"]],
+    [[], ["LEFT"], ["RIGHT"]],
+      [[], ["A"], ["B"], ["X"], ["Y"], ["L"],["R"], ["A", "B"], ["A", "X"], ["A", "Y"], ["A", "R"], ["A", "L"], ["B", "X"], ["B","Y"],["B","L"],["B","R"],["X","Y"],["X","L"],["X","R"],["L","R"], ["START"]]
+  ]
+}

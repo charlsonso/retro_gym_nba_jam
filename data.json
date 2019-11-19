@@ -1,0 +1,24 @@
+{
+  "info": {
+    "end_game": {
+      "address": 3077,
+      "type": "<u1"
+    },
+    "player_1_score": {
+      "address": 5958,
+      "type": "<u1"
+    },
+    "player_2_score": {
+      "address": 5960,
+      "type": "<u1"
+    },
+    "quarter_clock": {
+      "address": 3465,
+      "type": "<s2"
+    },
+    "zero_based_quarter": {
+      "address": 3475,
+      "type": "<u1"
+    }
+  }
+}
