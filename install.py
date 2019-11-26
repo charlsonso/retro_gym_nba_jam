@@ -16,10 +16,11 @@ retro_install_cmd = 'python -m retro.import "rom/NBA Jam - Tournament Edition (U
 current_location = os.getcwd()
 
 nba_jam_file_location = "nba_jam_retro_gym"
+nba_jam_file_location = os.path.join(current_location, nba_jam_file_location)
 
 files_to_copy = ["data.json",
                  "lakers-pacers-peeler-divac.state",
-                 "metadta.json",
+                 "metadata.json",
                  "reward.json",
                  "rom.sha",
                  "scenario.json"]
@@ -28,5 +29,7 @@ if (os.path.exists(full_install_location)):
     print('Folder exits. Rewriting files')
 else:
     os.mkdir(full_install_location)
-    for i in files_to_copy:
-        copyfile(os.path.join(current_location, i), full_install_location)
+for i in files_to_copy:
+    copyfile(os.path.join(nba_jam_file_location, i), os.path.join(full_install_location, i))
+
+os.system(retro_install_cmd)
