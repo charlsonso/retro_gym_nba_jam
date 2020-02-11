@@ -107,6 +107,9 @@
   },
   "reward": {
     "variables": {
+      "player_1_assist": {
+        "penalty": 1.0
+      },
       "player_1_score": {
         "reward": 1.0
       },
