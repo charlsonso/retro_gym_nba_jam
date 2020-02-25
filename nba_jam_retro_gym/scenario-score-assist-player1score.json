@@ -1,0 +1,122 @@
+{
+  "actions": [
+    [
+      [],
+      [
+        "UP"
+      ],
+      [
+        "DOWN"
+      ]
+    ],
+    [
+      [],
+      [
+        "LEFT"
+      ],
+      [
+        "RIGHT"
+      ]
+    ],
+    [
+      [],
+      [
+        "B"
+      ],
+      [
+        "Y"
+      ],
+      [
+        "B",
+        "Y"
+      ],
+      [
+        "A"
+      ],
+      [
+        "B",
+        "A"
+      ],
+      [
+        "Y",
+        "A"
+      ],
+      [
+        "X"
+      ],
+      [
+        "B",
+        "X"
+      ],
+      [
+        "Y",
+        "X"
+      ],
+      [
+        "A",
+        "X"
+      ],
+      [
+        "L"
+      ],
+      [
+        "B",
+        "L"
+      ],
+      [
+        "A",
+        "L"
+      ],
+      [
+        "X",
+        "L"
+      ],
+      [
+        "R"
+      ],
+      [
+        "B",
+        "R"
+      ],
+      [
+        "A",
+        "R"
+      ],
+      [
+        "X",
+        "R"
+      ],
+      [
+        "L",
+        "R"
+      ]
+    ]
+  ],
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "zero_based_quarter": {
+        "op": "greater-than"
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "player_1_assist": {
+        "reward": 1.0
+      },
+      "player_1_score": null,
+      "team_1_score": {
+        "reward": 5.0
+      },
+      "team_2_score": {
+        "reward": 2.0
+      }
+    }
+  }
+}
