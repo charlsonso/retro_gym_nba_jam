@@ -1,5 +1,4 @@
 gym-retro
 numpy
 matplotlib
-torch
-torchvision
+pyglet==1.5.0
