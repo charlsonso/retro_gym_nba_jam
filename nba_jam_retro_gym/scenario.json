@@ -101,7 +101,7 @@
   "done": {
     "variables": {
       "zero_based_quarter": {
-        "op": "greater-than"
+        "op": "zero"
       }
     }
   },

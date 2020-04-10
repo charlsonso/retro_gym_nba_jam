@@ -11,7 +11,7 @@ full_install_location = os.path.join(root_location, install_location)
 full_install_location = os.path.abspath(full_install_location)
 full_install_location = os.path.join(full_install_location, "NbaJamTE-Snes")
 
-retro_install_cmd = 'python -m retro.import "rom/NBA Jam - Tournament Edition (USA).sfc"'
+retro_install_cmd = 'python -m retro.import rom' 
 
 current_location = os.getcwd()
 
@@ -25,6 +25,7 @@ files_to_copy = ["data.json",
                  "rom.sha",
                  "scenario.json"]
 
+print(full_install_location)
 if (os.path.exists(full_install_location)):
     print('Folder exits. Rewriting files')
 else:
